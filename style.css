@@ -1,26 +1,79 @@
 html,
 body {
   height: 100%;
+  font-family: "Merriweather", serif;
 }
 
 .container {
   display: grid;
   height: 100%;
-  grid-template-rows: 72px;
+  grid-template-rows: 72px auto;
+  grid-template-columns: 1fr 1fr;
 }
 .header {
-  border-bottom: 1px solid black;
+  background-color: rgba(175, 210, 233, 0.33);
   display: flex;
-  align-items: flex-start;
-  text-align: justify;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.body {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .headerElement {
   display: flex;
   align-items: center;
-  margin-right: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   height: 100%;
 }
 #name {
-  margin-right: 2em;
+  font-size: 1.5em;
+  margin-right: 1em;
   margin-left: 1em;
+}
+
+#theCryingWolf {
+  margin-left: 0.75em;
+  margin-top: 0.75em;
+  font-family: "Caveat", cursive;
+  font-size: 6em;
+}
+#theCryingWolf p {
+  margin: 0%;
+}
+#theCrying {
+  display: inline-block;
+  padding-bottom: 0.33em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#wolf {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#summary {
+  margin-top: 0.5em;
+  width: 75%;
+}
+#summary p {
+  font-size: 14px;
+  font-family: "Merriweather", serif;
+}
+img {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  border-radius: 2.5%;
 }
