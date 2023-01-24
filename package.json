@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hripple46/Steves-Page#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
   }
 }
