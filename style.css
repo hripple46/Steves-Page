@@ -11,6 +11,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .header {
+  height: 76px;
   background-color: rgba(175, 210, 233, 0.33);
   display: flex;
   align-items: center;

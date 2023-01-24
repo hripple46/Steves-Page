@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 72px auto;
+}
+.header {
+    height:76px;
+  background-color: rgba(175, 210, 233, 0.33);
+  grid-row: 1/2;
+  display: flex;
+  width: 100%;
+  
+  align-items: stretch;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.headerElement {
+    display: flex;
+ 
+    align-items: center;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    height: 100%;
+  }
+  .body{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 192px;
+    margin-right:96px;
+    margin-left:96px;
+ 
+  }
+  #name {
+    font-size: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+
+#profileText{
+    flex:1;
+    margin-left:24px;
+    max-width:468px;
+  
+}  
+#profileImg{
+    border: 1px solid black;
+    max-width: 468px;
+    flex:1;
+    text-align: end;
+    margin-right:24px;
+ 
+}
