@@ -4,6 +4,14 @@ body {
   font-family: "Merriweather", serif;
 }
 
+a:link, a:visited {
+  text-decoration:none;
+  color: black;
+}
+.headerElement:hover{
+  background-color: rgba(0, 0, 0, .05);
+}
+
 .container {
   display: grid;
   height: 100%;
@@ -31,8 +39,8 @@ body {
 .headerElement {
   display: flex;
   align-items: center;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  padding-left: .5em;
+    padding-right:.5em;
   height: 100%;
 }
 #name {
