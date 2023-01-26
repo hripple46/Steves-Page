@@ -3,6 +3,17 @@ body {
   height: 100%;
   font-family: "Merriweather", serif;
 }
+
+.big-image {
+  background-image: url("./img/IMG_EC3D480B86BF-1.jpeg");
+  height: 100%;
+  width: 100%;
+  filter: blur(6px);
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -18,8 +29,9 @@ a:visited {
   grid-template-rows: 72px auto;
 }
 .header {
+  z-index: 2;
   height: 76px;
-  background-color: rgba(175, 210, 233, 0.33);
+  background-color: rgba(175, 210, 233, 0.7);
   grid-row: 1/2;
   display: flex;
   width: 100%;
@@ -33,6 +45,7 @@ a:visited {
   left: 0;
 }
 .headerElement {
+  z-index: 2;
   display: flex;
   min-width: 10%;
   align-items: center;
@@ -50,6 +63,7 @@ a:visited {
   margin-top: 192px;
   margin-right: 96px;
   margin-left: 96px;
+  padding-top: 48px;
 }
 #name {
   font-size: 1.5em;
@@ -63,11 +77,9 @@ a:visited {
   max-width: 468px;
 }
 #profileImg {
-  border: 1px solid black;
+  display: inline-block;
   max-width: 468px;
   flex: 1;
-  text-align: end;
-  margin-right: 24px;
 }
 ul {
   list-style-type: none;
@@ -87,6 +99,7 @@ li:hover {
   cursor: pointer;
 }
 #dropdown {
+  z-index: 2;
   display: none;
   position: absolute;
   top: 60px;
@@ -102,4 +115,16 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border-radius: 4%;
+  box-shadow: 0 0 48px 12px black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.body p {
+  color: white;
 }
