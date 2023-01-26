@@ -26,7 +26,18 @@ a:visited {
 .container {
   display: grid;
   height: 100%;
-  grid-template-rows: 72px auto;
+  grid-template-rows: 72px 72px auto;
+}
+.titleName {
+  margin-top: 96px;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 4em;
+  margin: 0;
+  color: WHITE;
 }
 .header {
   z-index: 2;
@@ -57,10 +68,10 @@ a:visited {
   height: 100%;
 }
 .body {
-  grid-row-start: 2;
+  grid-row-start: 3;
   display: flex;
   justify-content: center;
-  margin-top: 192px;
+  margin-top: 96px;
   margin-right: 96px;
   margin-left: 96px;
   padding-top: 48px;
@@ -99,6 +110,7 @@ li:hover {
   cursor: pointer;
 }
 #dropdown {
+  background-color: white;
   z-index: 2;
   display: none;
   position: absolute;
