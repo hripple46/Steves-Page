@@ -21,6 +21,12 @@ a:visited {
 }
 .headerElement:hover {
   background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+#collection1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
