@@ -5,3 +5,8 @@ cryingWolf.addEventListener("click", () => {
 });
 
 //let about = document.querySelector("#")
+
+let downAndAway = document.querySelector("#downAndAway");
+downAndAway.addEventListener("click", () => {
+  window.location.href = "downAndAway.html";
+});
