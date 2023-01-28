@@ -151,3 +151,8 @@ li:hover {
   margin-right: 48px;
   margin-top: 24px;
 }
+#copyright {
+  position: fixed;
+  bottom: 0;
+  font-size: 0.75em;
+}
