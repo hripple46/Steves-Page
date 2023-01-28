@@ -4,6 +4,27 @@ body {
   font-family: "Merriweather", serif;
 }
 
+@media (max-width: 768px) {
+  .container > .body {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .body > #profileText {
+    margin-left: 0px;
+  }
+  .container > .titleName {
+    text-align: center;
+    bottom: 12px;
+    margin-top: 0;
+  }
+  .titleName > h1 {
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+}
+
 .big-image {
   background-image: url("./img/IMG_EC3D480B86BF-1.jpeg");
   height: 100%;
