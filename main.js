@@ -20,3 +20,17 @@ let collection = document.querySelector("#collection1");
 collection.addEventListener("click", () => {
   window.location.href = "collection.html";
 });
+
+//this fetches text updates for 'lostandaway'page
+fetch(
+  "https://cdn.contentful.com/spaces/qbdplr5aogh4/entries/2iBUtmIEsNoCOQsvQkyH4W?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
+)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (response) {
+    console.log(response.fields.lostandaway.content[0].content[0].value);
+  });
+
+//cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE
+//qbdplr5aogh4
