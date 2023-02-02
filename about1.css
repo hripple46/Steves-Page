@@ -84,6 +84,7 @@ h1 {
   top: 0;
   right: 0;
   left: 0;
+  backdrop-filter: blur(5px);
 }
 .headerElement {
   z-index: 2;
@@ -140,6 +141,7 @@ li:hover {
   cursor: pointer;
 }
 #dropdown {
+  width: fit-content;
   background-color: white;
   z-index: 2;
   display: none;
@@ -157,6 +159,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 img {
