@@ -8,11 +8,12 @@ fetch(
     return response.json();
   })
   .then(function (response) {
-    let textRetrieve =
-      response.items[0].fields.textPost.content[0].content[0].value;
+    console.log(response);
+    let textRetrieve = response.items[0].fields.summary;
     return textRetrieve;
   })
   .then(function (textRetrieve) {
+    console.log(textRetrieve);
     let paragraph = document.createElement("p");
     paragraph.innerText = `${textRetrieve}`;
     textContent.appendChild(paragraph);
