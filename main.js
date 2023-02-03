@@ -1,7 +1,7 @@
 let cryingWolf = document.querySelector("#cryingWolf");
 
 cryingWolf.addEventListener("click", () => {
-  window.location.href = "collection.html";
+  window.location.href = "theCryingWolf.html";
 });
 
 //let about = document.querySelector("#")
@@ -18,11 +18,11 @@ header_Name.addEventListener("click", () => {
 
 let collection = document.querySelector("#collection1");
 collection.addEventListener("click", () => {
-  window.location.href = "collection.html";
+  window.location.href = "theCryingWolf.html";
 });
 
 //this fetches text updates for 'lostandaway'page
-fetch(
+/*fetch(
   "https://cdn.contentful.com/spaces/qbdplr5aogh4/environments/master/entries?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
   //"https://cdn.contentful.com/spaces/qbdplr5aogh4/entries/2iBUtmIEsNoCOQsvQkyH4W?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
 )
@@ -33,14 +33,13 @@ fetch(
     for (let keys in response) {
       if (`${keys}` == "items") {
         for (let i in response[keys]) {
-          console.log(response[keys][i]);
           console.log(
             response[keys][i].fields.lostandaway.content[0].content[0].value
           );
         }
       }
     }
-  });
+  });*/
 
 //cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE
 //qbdplr5aogh4
