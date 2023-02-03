@@ -21,6 +21,11 @@ collection.addEventListener("click", () => {
   window.location.href = "theCryingWolf.html";
 });
 
+let other = document.querySelector("#firstLines");
+other.addEventListener("click", () => {
+  window.location.href = "crowdFirstLines.html";
+});
+
 //this fetches text updates for 'lostandaway'page
 /*fetch(
   "https://cdn.contentful.com/spaces/qbdplr5aogh4/environments/master/entries?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
