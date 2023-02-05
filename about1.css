@@ -56,7 +56,7 @@ a:visited {
 .container {
   display: grid;
   height: 100%;
-  grid-template-rows: 72px 72px auto;
+  grid-template-rows: 72px 72px auto auto;
 }
 .titleName {
   margin-top: 96px;
@@ -177,4 +177,16 @@ img {
   border-radius: 24px;
   padding: 12px;
   box-shadow: 0 0 48px 12px black;
+}
+
+#mc_embed_signup {
+  justify-self: center;
+  grid-row-start: 4;
+  background: none;
+  font-family: "merriweather", serif;
+  box-shadow: 0 0 48px 12px rgba(0, 0, 0, 0.5);
+}
+#mce-FNAME-HELPERTEXT {
+  background: none;
+  padding: 0px;
 }
