@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <script src="main.js" defer></script>
+    <script src="crowdFirstLines.js" defer></script>
     <title>Crowdsourced First Lines</title>
   </head>
   <body>
@@ -50,7 +51,7 @@
       </div>
       <div id="pageTitle"><p>Crowdsourced First Lines</p></div>
       <div class="fbPosts">
-        <div id="postAndComment">
+        <div id="post1">
           <div
             class="fb-post"
             data-href="https://www.facebook.com/steve.ripple.7/posts/pfbid0oVAWaBt7NYncWf7RL9ukZbP2PfZ3yGt1xTzQUSKwJxASFjyQKNpF54mM1WKfJWtYl"
@@ -74,7 +75,18 @@
             </blockquote>
           </div>
           <label id="commentLabel" for="userComment">Post Comment: </label>
-          <input type="text" name="userComment" />
+
+          <div id="commentContainer">
+            <div id="inputAndReplyButton">
+              <input
+                id="idForCommentLabel"
+                type="text"
+                name="userComment"
+                value=""
+              />
+              <button id="post1SubmitComment">Reply</button>
+            </div>
+          </div>
         </div>
 
         <div
