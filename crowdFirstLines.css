@@ -190,3 +190,7 @@ img {
   text-align: center;
   font-size: 48px;
 }
+#postAndComment {
+  display: flex;
+  flex-direction: column;
+}
