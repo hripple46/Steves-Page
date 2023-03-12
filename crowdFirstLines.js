@@ -55,6 +55,7 @@ async function getComments() {
 }
 
 let post1Submit = document.querySelector("#post1SubmitComment");
+
 let post1Input = document.querySelector("#idForCommentLabel");
 let post1ReplyContainer = document.querySelector("#commentContainer");
 
