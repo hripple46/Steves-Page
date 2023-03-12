@@ -23,6 +23,24 @@ initializeApp(firebaseConfig);
 const db = getFirestore(app);
 getFirestore(app);
 
+import {
+  collection,
+  query,
+  where,
+  getDocs,
+} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+
+window.onload = () => {
+  loadComments();
+};
+async function loadComments() {
+  let q = query(collection(db, "3rdEdition"));
+  let querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    console.log(doc._document.data.value.mapValue.fields.text.stringValue);
+  });
+}
+
 async function getComments() {
   let comments = document.querySelectorAll(".thirdEditionComments");
 
