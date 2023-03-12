@@ -23,14 +23,19 @@ initializeApp(firebaseConfig);
 const db = getFirestore(app);
 getFirestore(app);
 
-async function createDoc() {
-  await setDoc(doc(db, "crowdsourcedFirstLines", "comment2"), {
-    name: "comment",
-    text: "This is great!",
-  });
+async function getComments() {
+  let comments = document.querySelectorAll(".thirdEditionComments");
+
+  console.log(comments);
+
+  for (let i = 0; i < comments.length; i++) {
+    console.log(comments[i].innerHTML);
+    await setDoc(doc(db, "3rdEdition", "comment" + `${i}`), {
+      text: `${comments[i].innerHTML}`,
+    });
+  }
 }
-createDoc();
-setDoc;
+
 let post1Submit = document.querySelector("#post1SubmitComment");
 let post1Input = document.querySelector("#idForCommentLabel");
 let post1ReplyContainer = document.querySelector("#commentContainer");
@@ -38,6 +43,8 @@ let post1ReplyContainer = document.querySelector("#commentContainer");
 post1Submit.addEventListener("click", () => {
   let inputValue = post1Input.value;
   let newComment = document.createElement("div");
+  newComment.setAttribute("class", "thirdEditionComments");
   newComment.innerHTML = '"' + inputValue + '"';
   post1ReplyContainer.appendChild(newComment);
+  getComments();
 });
