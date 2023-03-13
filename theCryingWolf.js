@@ -34,7 +34,6 @@ fetch(
     return promise; // return the final promise
   })
   .then(function () {
-    debugger;
     addText(textEntries, textContent);
   })
   .catch(function (error) {
