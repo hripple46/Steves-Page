@@ -81,14 +81,13 @@ let inputSecondEdition = document.querySelector(
 let commentContainerSecondEdition = document.querySelector(
   "#commentContainerSecondEdition"
 );
+let commentsContainer2 = document.querySelector("#commentContainer2");
 submitSecondEdition.addEventListener("click", () => {
   let inputValue = inputSecondEdition.value;
-  let newComment = document.createElement("div");
-  let newCommentText = document.createElement("p");
+  let newComment = document.createElement("p");
   newComment.setAttribute("class", "secondEditionComments");
-  newCommentText.innerText = '"' + inputValue + '"';
-  newComment.appendChild(newCommentText);
-  commentContainerSecondEdition.appendChild(newComment);
+  newComment.innerText = '"' + inputValue + '"';
+  commentsContainer2.appendChild(newComment);
   getCommentsSecondEdition();
 });
 async function getCommentsSecondEdition() {
@@ -124,15 +123,16 @@ let inputFirstEdition = document.querySelector(
 let commentContainerFirstEdition = document.querySelector(
   "#commentContainerFirstEdition"
 );
+let commentsContainer1Edition = document.querySelector(
+  "#commentContainer1Edition"
+);
+
 submitFirstEdition.addEventListener("click", () => {
   let inputValue = inputFirstEdition.value;
-  if (inputValue == "") {
-    return;
-  }
-  let newComment = document.createElement("div");
+  let newComment = document.createElement("p");
   newComment.setAttribute("class", "firstEditionComments");
-  newComment.innerHTML = '"' + inputValue + '"';
-  commentContainerFirstEdition.appendChild(newComment);
+  newComment.innerText = '"' + inputValue + '"';
+  commentsContainer1Edition.appendChild(newComment);
   getCommentsFirstEdition();
 });
 async function getCommentsFirstEdition() {

@@ -34,9 +34,14 @@ a:visited {
     margin-right: 24px;
     margin-top: 24px;
   }
-  #commentContainer1 {
-    flex-flow: wrap column;
-    display: flex;
+  #post1 > #commentContainer1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #commentContainer1 > p {
+    max-width: 400px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 .headerElement:hover {
@@ -259,10 +264,8 @@ img {
 }
 
 #commentContainer1 {
-  flex-flow: wrap column;
   display: flex;
-  max-width: 600px;
-}
-#commentContainer1 > p {
-  flex-shrink: 1;
+  flex-flow: row wrap;
+  margin-left: 175px;
+  margin-right: 175px;
 }
