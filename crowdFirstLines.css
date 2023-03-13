@@ -242,6 +242,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
+  align-items: center;
 }
 .inputAndReplyButtonEdition {
   height: 48px;
@@ -265,7 +266,25 @@ img {
 
 #commentContainer1 {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   margin-left: 175px;
   margin-right: 175px;
+  align-items: center;
+}
+#commentContainer1Edition {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 175px;
+  margin-right: 175px;
+  align-items: center;
+}
+.inputAndReplyButtonEdition {
+  width: 500px;
+}
+#commentContainer2 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 175px;
+  margin-right: 175px;
+  align-items: center;
 }

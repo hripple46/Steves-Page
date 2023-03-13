@@ -111,7 +111,7 @@ async function loadCommentsSecondEdition() {
     let newComment = document.createElement("p");
     newComment.setAttribute("class", "secondEditionComments");
     newComment.innerText = `${doc._document.data.value.mapValue.fields.text.stringValue}`;
-    commentContainerSecondEdition.appendChild(newComment);
+    commentsContainer2.appendChild(newComment);
   });
 }
 
@@ -156,6 +156,6 @@ async function loadCommentsFirstEdition() {
     let newComment = document.createElement("p");
     newComment.setAttribute("class", "firstEditionComments");
     newComment.innerText = `${doc._document.data.value.mapValue.fields.text.stringValue}`;
-    commentContainerFirstEdition.appendChild(newComment);
+    commentsContainer1Edition.appendChild(newComment);
   });
 }
