@@ -38,6 +38,10 @@ async function loadComments() {
   let querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     console.log(doc._document.data.value.mapValue.fields.text.stringValue);
+    let newComment = document.createElement("p");
+    newComment.setAttribute("class", "thirdEditionComments");
+    newComment.innerText = `${doc._document.data.value.mapValue.fields.text.stringValue}`;
+    post1ReplyContainer.appendChild(newComment);
   });
 }
 
