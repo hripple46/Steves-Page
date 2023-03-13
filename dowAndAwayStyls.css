@@ -9,7 +9,7 @@ a:visited {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 841px) {
+@media (max-width: 1100px) {
   body > .container {
     display: flex;
     flex-direction: column;
@@ -30,6 +30,17 @@ a:visited {
     max-width: 95%;
     margin-right: 24px;
     margin-top: 24px;
+  }
+  #theCryingWolf > #theCrying {
+    justify-content: center;
+  }
+  .header > #name {
+    font-size: 1em;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .container > .header {
+    justify-content: center;
   }
 }
 .headerElement:hover {

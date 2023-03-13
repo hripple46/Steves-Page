@@ -12,6 +12,18 @@ a:visited {
   text-decoration: none;
   color: black;
 }
+
+@media (max-width: 1100px) {
+  .header > #name {
+    font-size: 1em;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .container > .header {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 841px) {
   body > .container {
     display: flex;

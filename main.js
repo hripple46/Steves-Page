@@ -16,11 +16,6 @@ header_Name.addEventListener("click", () => {
   window.location.href = "index.html";
 });
 
-let collection = document.querySelector("#collection1");
-collection.addEventListener("click", () => {
-  window.location.href = "theCryingWolf.html";
-});
-
 let other = document.querySelector("#firstLines");
 other.addEventListener("click", () => {
   window.location.href = "crowdFirstLines.html";

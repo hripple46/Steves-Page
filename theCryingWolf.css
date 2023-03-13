@@ -14,7 +14,7 @@ a:visited {
   cursor: pointer;
 }
 
-@media (max-width: 841px) {
+@media (max-width: 1100px) {
   body > .container {
     grid-template-columns: 1fr;
     grid-template-rows: 72px auto;
@@ -25,13 +25,22 @@ a:visited {
   .container > img {
     flex: 1;
     margin-right: 0;
-    max-height: 50%;
+    margin-top: 0px;
+    height: 100%;
   }
   .container > .body {
     flex: 1;
   }
   .body > #theCryingWolf {
     margin-left: 0;
+  }
+  .header > #name {
+    font-size: 1em;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .container > .header {
+    justify-content: center;
   }
 }
 
@@ -122,6 +131,7 @@ img {
   margin-top: 96px;
   border-radius: 2.5%;
   max-width: 500px;
+  max-height: 600px;
   box-shadow: 0 0 96px 1px rgba(0, 0, 0, 0.5);
 }
 ul {
