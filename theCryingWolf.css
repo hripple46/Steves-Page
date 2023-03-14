@@ -42,6 +42,13 @@ a:visited {
   .container > .header {
     justify-content: center;
   }
+  #theCryingWolf > #theCrying {
+    text-align: center;
+  }
+  #theCrying > #wolf {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .container {
