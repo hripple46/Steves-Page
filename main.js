@@ -1,3 +1,6 @@
+//code to make ui better on IOS Safari
+document.body.addEventListener("touchstart", function () {});
+
 let cryingWolf = document.querySelector("#cryingWolf");
 
 cryingWolf.addEventListener("click", () => {
