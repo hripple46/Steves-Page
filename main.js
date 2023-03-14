@@ -24,6 +24,11 @@ other.addEventListener("click", () => {
   window.location.href = "crowdFirstLines.html";
 });
 
+let blog = document.querySelector("#blog");
+blog.addEventListener("click", () => {
+  window.location.href = "blog.html";
+});
+
 //this fetches text updates for 'lostandaway'page
 /*fetch(
   "https://cdn.contentful.com/spaces/qbdplr5aogh4/environments/master/entries?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
