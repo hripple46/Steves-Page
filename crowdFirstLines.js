@@ -159,3 +159,16 @@ async function loadCommentsFirstEdition() {
     commentsContainer1Edition.appendChild(newComment);
   });
 }
+
+function changeDataWidth() {
+  var divs = document.querySelectorAll("fb-post");
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].setAttribute("data-width", "250");
+  }
+}
+window.addEventListener("resize", function () {
+  var mediaQuery = window.matchMedia("(max-width: 600px)");
+  if (mediaQuery.matches) {
+    changeDataWidth();
+  }
+});

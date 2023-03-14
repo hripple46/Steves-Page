@@ -5,6 +5,7 @@ body {
 }
 #subTitle {
   font-size: 16px;
+  margin-bottom: 32px;
 }
 
 a:link,
@@ -22,6 +23,8 @@ a:visited {
   .container > .header {
     justify-content: center;
   }
+}
+@media (max-width: 600px) {
 }
 
 @media (max-width: 841px) {
@@ -54,6 +57,15 @@ a:visited {
     max-width: 400px;
     margin-left: 25px;
     margin-right: 25px;
+  }
+  #commentContainer > #inputAndReplyButton {
+    width: 250px;
+  }
+  #commentContainerSecondEdition > #inputAndReplyButtonSecondEdition {
+    width: 250px;
+  }
+  #commentContainerFirstEdition > #inputAndReplyButtonfirstEdition {
+    width: 250px;
   }
 }
 .headerElement:hover {
@@ -299,4 +311,8 @@ img {
   margin-left: 175px;
   margin-right: 175px;
   align-items: center;
+}
+#commentContainerSecondEdition,
+#commentContainerFirstEdition {
+  margin-top: 18px;
 }
