@@ -67,6 +67,11 @@ a:visited {
   #commentContainerFirstEdition > #inputAndReplyButtonfirstEdition {
     width: 250px;
   }
+  #secondEdition > #commentContainer2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+  }
 }
 .headerElement:hover {
   background-color: rgba(0, 0, 0, 0.05);
