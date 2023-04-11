@@ -194,6 +194,8 @@ ul {
   margin-right: 72px;
   margin-left: 48px;
   border-radius: 25px;
+  max-width: 500px;
+  height: auto;
 }
 @media (max-width: 1000px) {
   .blogPost {
@@ -210,9 +212,7 @@ ul {
     margin-left: 48px;
   }
 }
-#post2,
-#post3,
-#post4 {
+.blogPost {
   margin-top: 48px;
 }
 .border-bottom {
