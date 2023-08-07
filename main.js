@@ -14,6 +14,11 @@ downAndAway.addEventListener("click", () => {
   window.location.href = "downAndAway.html";
 });
 
+let scaryStories = document.querySelector("#scaryStories");
+scaryStories.addEventListener("click", () => {
+  window.location.href = "scaryStories.html";
+});
+
 let header_Name = document.querySelector("#name");
 header_Name.addEventListener("click", () => {
   window.location.href = "index.html";
