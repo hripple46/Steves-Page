@@ -34,6 +34,33 @@ blog.addEventListener("click", () => {
   window.location.href = "blog.html";
 });
 
+//the following block of code adds closeable pop up to home screen
+// Check if the current URL is the home page
+document.addEventListener("DOMContentLoaded", (event) => {
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    // Show the popup
+    document.getElementById("popup-overlay").style.display = "block";
+
+    // Get the close button element
+    var closeButton = document.querySelector(".close-btn");
+
+    // When the user clicks on the close button, hide the popup
+    closeButton.onclick = function () {
+      document.getElementById("popup-overlay").style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the popup content, hide the popup
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("popup-overlay")) {
+        document.getElementById("popup-overlay").style.display = "none";
+      }
+    };
+  }
+});
+
 //this fetches text updates for 'lostandaway'page
 /*fetch(
   "https://cdn.contentful.com/spaces/qbdplr5aogh4/environments/master/entries?access_token=cj67-ZjOiTRefmEvkVqPvMFWX3RwPUXVwYWVQTKqCFE"
